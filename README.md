@@ -19,7 +19,7 @@ pull the required images from dockerhub and build the containers using the speci
 Due to this reason, the first time you run docker-compose it might take a while for the application to load. 
 Here is a scheme of the architecture used:
 
-![Application Architecture](https://github.com/pkalaitzakis/e-commerce-web-app/architecture.png)
+![Application Architecture](https://github.com/pkalaitzakis/e-commerce-web-app/blob/main/architecture.png?raw=true)
 
 # Front-End Client
 Anyone can sign up on the application by filling out the registration form under 'localhost/index.php'. 
