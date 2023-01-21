@@ -13,14 +13,14 @@ In order to successfully log in, account owners must provide a correct set of cr
 
 You can use the following set of credentials to login to three distinct dummy accounts, each assigned a different role in the app:
 
--- admin@test.com
--- abc123456@
+-admin@test.com
+ -abc123456@
 
--- merchant@test.com
--- abc123456@
+-merchant@test.com
+ -abc123456@
 
--- user@test.com
--- abc123456@
+-user@test.com
+ -abc123456@
 
 'Confirmed' users are the ones that have been granted the permissions pertaining to the role they requested upon registering. Administrators are responsible for confirming users through the administration.php page of the application.
 
