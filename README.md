@@ -29,8 +29,8 @@ wish to have in the app.
 In order to successfully log in, account owners must provide a correct set of credentials (email & password),
 and also be confirmed (enabled) by an active administrator prior to the login action. 
 
-You can use the following set of credentials to login to three distinct dummy accounts, each assigned a 
-different role in the app:
+The following set of credentials of three dummy accounts, each assigned a 
+different role in the app, can be used for a quick login:
 
 | Email | Password | Role |
 | --- | --- | --- |
