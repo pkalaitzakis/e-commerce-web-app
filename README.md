@@ -57,7 +57,7 @@ Application data (with the exception of users' personal information, roles, perm
 A seperate Docker container hosting an apache server that runs php code and acts as a request/response forwarding center for the front-end client. Every time a resource is requested at the front-end side (WebApp), a request is made to this domain where it gets forwarded to the container running the target service (Keyrock, Data Storage, etc).
 
 # Pending implementations
-## FIWARE'S Orion Context Broker
+### FIWARE'S Orion Context Broker
 - Utilize the service's REST api to create a PUB/SUB mechanism that informs users about their cart items being withdrawn/restocked 
 by their sellers. 
 - Adjust welcome page to show update feed from orion for a certain period of time.
