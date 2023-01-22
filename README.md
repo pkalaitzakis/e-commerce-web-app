@@ -23,8 +23,7 @@ Here is a scheme of the architecture used:
 
 # Front-End Client
 Anyone can sign up on the application by filling out the registration form under 'localhost/index.php'. 
-Inside the form, along with some personal information, visiotrs will be asked to specify the role they 
-wish to have in the app.
+Through this form, visitors specify the role they wish to have in the app as well as provide some personal information.
 
 In order to successfully log in, account owners must provide a correct set of credentials (email & password),
 and also be confirmed (enabled) by an active administrator prior to the login action. 
@@ -38,8 +37,7 @@ different role in the app, can be used for a quick login:
 | `merchant@test.com` | `abc123456@` | Merchant |
 | `user@test.com` | `abc123456@` | User |
 
-'Confirmed' users are the ones that have been granted the permissions pertaining to the role they requested upon
-registering. Administrators are responsible for confirming users through the administration.php page of the application.
+Users need to be 'Confirmed' in order to be granted the permissions to access their respective role features. Administrators are responsible for confirming users through the administration.php page of the application.
 
 # FIWARE's Keyrock Identity Management Service
 User authentication and authorization is implemented by utilizing FIWARE's identity management service. In short, Keyrock is a FIWARE sevice that allows a website provider (super-admin) to register their domain as an Application, and maintain a set of Roles (usergroups) with different Permissions regarding access to that application's resources. To this end, another docker container running MySQL is required for storing data detrimental to Keyrock's internal architecture. Each user's registration data is also stored inside the auto-generated IDM database, under the 'description' column of the 'users' table, by seperating each field with a ', ' delimiter. If you plan on fiddling with the Keyrock gui under localhost:3005, just to see how everything is setup, be mindful that if the user description field is altered, the administration page of the front-end client might show unexpected behaviour. FIWARE provides a pre-built REST API that is utilized for communicating with Keyrock service while browsing the application, by forwarding HTTP requests to it with cURL in PHP.
