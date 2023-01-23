@@ -28,7 +28,7 @@ services:
       volumes:
          - ./WebApp:/var/www/html/
          
-   # Container that receives/forwards requests from WebApp them to the right
+   # Container that transfers requests back and forth between WebApp and other target backend services using cURL in PHP
    app_logic:
       build: ./AppLogic
       container_name: app-logic
