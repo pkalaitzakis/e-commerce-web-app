@@ -3,7 +3,7 @@ version: '3.9'
 services:
    #################################################### APACHE SERVERS ####################################################
    
-   # Apache server representing the DataStorage container which hosts the mongo databases 
+   # Apache server representing the DataStorage container that acts as a REST api for MongoDB 
    data_storage:
       build: ./DataStorage
       container_name: data-storage
